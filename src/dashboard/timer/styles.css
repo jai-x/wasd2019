@@ -1,0 +1,9 @@
+.timer_display {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+  padding: 0;
+  width: auto;
+  height: auto;
+  border: none;
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "runners": ["Tankski", "Montagne"],
+    "category": "WASD%",
+    "estimate": "10:00",
+    "game": "Introduction",
+    "release_year": "2019",
+    "platform": "Twitch"
+  },
+  {
+    "runners": ["Murtag"],
+    "category": "Any%, Warpless",
+    "estimate": "50:00",
+    "game": "Dust: An Elysian Tail",
+    "release_year": "2012",
+    "platform": "PC"
+  },
+  {
+    "runners": ["Cursed1701"],
+    "category": "Any%, New Game+",
+    "estimate": "24:00",
+    "game": "Hotline Miami",
+    "release_year": "2012",
+    "platform": "PC"
+  },
+  {
+    "runners": ["zed0"],
+    "category": "Any%, Glitched",
+    "estimate": "1:20:00",
+    "game": "Tomb Raider",
+    "release_year": "2013",
+    "platform": "PC"
+  },
+  {
+    "runners": ["Amoeba"],
+    "category": "Story Mode, All Levels",
+    "estimate": "1:20:00",
+    "game": "Super Monkey Ball 2",
+    "release_year": "2002",
+    "platform": "Wii"
+  },
+  {
+    "runners": ["Murtag"],
+    "category": "48 Tracks, 150cc, No Items",
+    "estimate": "2:10:00",
+    "game": "Mario Kart 8 Deluxe",
+    "release_year": "2017",
+    "platform": "Switch"
+  }
+]

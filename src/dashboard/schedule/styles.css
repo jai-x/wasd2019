@@ -1,0 +1,16 @@
+.run_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.run_field {
+  margin: 5px 0;
+}
+
+.run_label {
+
+}

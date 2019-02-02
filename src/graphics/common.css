@@ -1,0 +1,33 @@
+@font-face {
+  font-family: DaggerSquareOblique;
+  src: url("./daggersquare-oblique.otf") format("opentype");
+}
+
+:root {
+  --wasd-white: #FFFFFF;
+  --wasd-green: #95FDEC;
+  --wasd-pink: #FF96A2;
+  --wasd-orange: #FFD996;
+  --wasd-orange-dark: #FFC196;
+  --wasd-gray: #222528;
+  --wasd-gray-light: #2E3337;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--wasd-gray);
+  font-family: DaggerSquareOblique;
+  color: var(--wasd-white);
+}
+
+* {
+ box-sizing: border-box;
+}

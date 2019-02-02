@@ -1,0 +1,13 @@
+.start_logo {
+  position: absolute;
+  top: 50%; left: 30%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.start_countdown {
+  position: absolute;
+  top: 50%; left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}

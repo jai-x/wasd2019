@@ -1,0 +1,17 @@
+{
+  "@schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "formatted": {
+      "type": "string",
+      "default": "05:00"
+    },
+    "state": {
+      "type": "string",
+      "enum": ["running", "paused", "ended"],
+      "default": "paused"
+    }
+  },
+  "required": ["formatted", "state"]
+}

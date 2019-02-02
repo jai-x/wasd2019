@@ -46,5 +46,21 @@
     "game": "Mario Kart 8 Deluxe",
     "release_year": "2017",
     "platform": "Switch"
+  },
+  {
+    "runners": ["The_Marve11"],
+    "category": "Jumpless",
+    "estimate": "2:20:00",
+    "game": "Super Mario Odyssey",
+    "release_year": "2017",
+    "platform": "Switch"
+  },
+  {
+    "runners": ["Zoggoth"],
+    "category": "Spyro 1, Any%",
+    "estimate": "1:10:00",
+    "game": "Spyro Reignited Trilogy",
+    "release_year": "2014",
+    "platform": "PS4"
   }
 ]

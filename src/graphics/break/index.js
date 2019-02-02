@@ -37,9 +37,9 @@ class BreakGraphic {
         m('div', { class: styles.box })),
       m('div', { class: styles.right_col },
         m('div', { class: styles.run_title }, 'Up Next'),
-        m(RunTile, { run: runs[i] }),
+        m(RunTile, { run: runs[i + 1] }),
         m('div', { class: styles.run_title }, 'Later'),
-        ...runs.slice(i + 1, i + 5).map(r => m(RunTile, { run: r }))),
+        ...runs.slice(i + 2, i + 6).map(r => m(RunTile, { run: r }))),
       m(FloatyContainer),
     ];
   }

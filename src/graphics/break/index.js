@@ -9,8 +9,23 @@ import '../common.css';
 const scheduleRep = window.nodecg.Replicant('schedule');
 const totalRep = window.nodecg.Replicant('total');
 
+class RunTile {
+  view(vnode) {
+    const { attrs: { run } } = vnode;
+    if (!run) {
+      return null;
+    }
+
+    return m('div', { class: styles.run_tile },
+      m('div', { class: styles.run_game }, run.game),
+      m('div', run.category),
+      m('div', `by ${run.runners.join(', ')}`));
+  }
+}
+
 class BreakGraphic {
   view() {
+    const { value: { runs, current: i } } = scheduleRep;
     return [
       m('div', { class: styles.left_col },
         m('div', { class: styles.box },
@@ -21,7 +36,10 @@ class BreakGraphic {
           m('img', { class: styles.logos, src: seLogo })),
         m('div', { class: styles.box })),
       m('div', { class: styles.right_col },
-        m('div', { class: styles.cam })),
+        m('div', { class: styles.run_title }, 'Up Next'),
+        m(RunTile, { run: runs[i] }),
+        m('div', { class: styles.run_title }, 'Later'),
+        ...runs.slice(i + 1, i + 5).map(r => m(RunTile, { run: r }))),
       m(FloatyContainer),
     ];
   }

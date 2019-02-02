@@ -37,12 +37,6 @@ class JustGivingAPIContext {
 }
 
 const totalRep = nodecg.Replicant('total');
-const context = new JustGivingAPIContext({
-  env: '',
-  appId: '',
-  pageShortName: '',
-});
-
 const DEFAULT_INTERVAL = 45 * 1000;
 let FAILED_REQUESTS = 0;
 
@@ -64,4 +58,15 @@ const updateTotal = (opts, interval) => {
   });
 };
 
-updateTotal(context.total(), DEFAULT_INTERVAL);
+try {
+  const context = new JustGivingAPIContext({
+    env: '',
+    appId: '',
+    pageShortName: '',
+  });
+  updateTotal(context.total(), DEFAULT_INTERVAL);
+} catch(e) {
+  nodecg.log.error(e);
+  nodecg.log.error('justGiving extension NOT RUNNING');
+}
+
